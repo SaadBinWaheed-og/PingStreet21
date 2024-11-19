@@ -1,0 +1,90 @@
+body {
+    font-family: "Bahiana", sans-serif; /* Primary font: Poppins; fallback: Arial */
+    background-color: #f4f4f9;
+    background: url('background.webp') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the entire background */  
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2, h3 {
+    font-family: "Bahiana", sans-serif;
+    font-weight: 600; /* Bold for headings */
+    color: #4CAF50; /* Highlight color for headings */
+  }
+
+  h1 {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 48px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center; /* Aligns all content in cells horizontally */
+    font-size: 32px;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center; /* Ensures all cells are center-aligned */
+    vertical-align: middle; /* Centers content vertically */
+  }
+  
+  table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  table tr {
+    transition: background-color 0.3s ease-in-out; /* Smooth color change */
+  }
+  
+  table th:nth-child(5), table td:nth-child(5) {
+    font-weight: bold;
+    color: #4CAF50;
+  }
+  @media (max-width: 480px) {
+    body {
+      background: url('background.webp') center center / cover no-repeat;
+
+      background-size: cover;
+      min-height: 100vh; /* Ensures the background covers the full viewport height */
+
+    }
+  
+    .container {
+      margin: 5px;
+      padding: 10px;
+    }
+  
+    table th,
+    table td {
+      padding: 5px;
+      font-size: 12px;
+    }
+  
+    table {
+      font-size: 10px;
+    }
+  }

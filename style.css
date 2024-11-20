@@ -1,9 +1,9 @@
 body {
-    font-family: "Bahiana", sans-serif; /* Primary font: Poppins; fallback: Arial */
+    font-family: "Finger Paint", sans-serif; /* Primary font: Poppins; fallback: Arial */
     background-color: #f4f4f9;
     background: url('background.webp') no-repeat center center fixed;
     background-size: cover; /* Ensures the image covers the entire background */  
-    color: #333;
+    color: #4e4747;
     margin: 0;
     padding: 0;
   }
@@ -53,7 +53,7 @@ body {
   }
   
   table tr:hover {
-    background-color: #f1f1f1;
+    background-color: #f1f1f1 !important;
   }
   
   table tr {
@@ -62,7 +62,6 @@ body {
   
   table th:nth-child(5), table td:nth-child(5) {
     font-weight: bold;
-    color: #4CAF50;
   }
   @media (max-width: 480px) {
     body {
@@ -81,10 +80,10 @@ body {
     table th,
     table td {
       padding: 5px;
-      font-size: 12px;
+      font-size: 32px;
     }
   
     table {
-      font-size: 10px;
+      font-size: 14px;
     }
   }

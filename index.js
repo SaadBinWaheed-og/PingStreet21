@@ -17,11 +17,6 @@ fetch('data.json')
     playersWithPoints.forEach((player, index) => {
       const row = document.createElement('tr');
 
-      // Apply color to the top 3 players
-      if (index === 0) row.style.backgroundColor = '#FFD70090'; // Gold for 1st
-      else if (index === 1)
-        row.style.backgroundColor = '#C0C0C080'; // Silver for 2nd
-
       // Add trophy for the top player
       if (index === 0 && player?.points > 0) {
         row.innerHTML = `

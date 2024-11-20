@@ -88,6 +88,10 @@ body {
   table th:nth-child(5), table td:nth-child(5) {
     font-weight: bold;
   }
+
+  table td:nth-child(5) {
+    color: #0caa31;
+  }
   @media (max-width: 480px) {
     body {
       background: url('background-2.webp') center center / cover no-repeat;

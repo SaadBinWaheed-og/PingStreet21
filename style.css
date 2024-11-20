@@ -1,7 +1,7 @@
 body {
     font-family: "Finger Paint", sans-serif; /* Primary font: Poppins; fallback: Arial */
     background-color: #f4f4f9;
-    background: url('background.webp') no-repeat center center fixed;
+    background: url('background-2.webp') no-repeat center center fixed;
     background-size: cover; /* Ensures the image covers the entire background */  
     color: #4e4747;
     margin: 0;
@@ -65,7 +65,7 @@ body {
   }
   @media (max-width: 480px) {
     body {
-      background: url('background.webp') center center / cover no-repeat;
+      background: url('background-2.webp') center center / cover no-repeat;
 
       background-size: cover;
       min-height: 100vh; /* Ensures the background covers the full viewport height */
@@ -80,7 +80,7 @@ body {
     table th,
     table td {
       padding: 5px;
-      font-size: 32px;
+      font-size: 14px;
     }
   
     table {

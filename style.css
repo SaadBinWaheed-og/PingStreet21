@@ -30,7 +30,7 @@ body {
   }
   
   h1, h2, h3 {
-    font-family: "Bahiana", sans-serif;
+    font-family: "Finger Paint", sans-serif;
     font-weight: 600; /* Bold for headings */
     color: #4CAF50; /* Highlight color for headings */
   }
@@ -94,7 +94,11 @@ body {
 
       background-size: cover;
       min-height: 100vh; /* Ensures the background covers the full viewport height */
-
+      display: flex; /* Enable flexbox for body */
+      flex-direction: column; /* Ensures items stack vertically if needed */
+      justify-content: center; /* Vertically center the content */
+      align-items: center; /* Horizontally center the content */
+      margin: 0; /* Remove any default margin for body */
     }
   
     .container {
@@ -102,6 +106,13 @@ body {
       padding: 10px;
     }
   
+    h1, h2, h3 {
+      font-family: "Finger Paint", sans-serif;
+      font-weight: 600; /* Bold for headings */
+      color: #4CAF50; /* Highlight color for headings */
+      font-size:18px ;
+    }
+
     table th,
     table td {
       padding: 5px;

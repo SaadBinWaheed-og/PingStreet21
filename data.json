@@ -1,18 +1,18 @@
 {
     "players": [
-      { "name": "Abeeha", "matches": 0, "wins": 0, "losses": 0 },
+      { "name": "Abeeha", "matches": 1, "wins": 0, "losses": 1 },
       { "name": "Amna", "matches": 0, "wins": 0, "losses": 0 },
       { "name": "Anabiya", "matches": 0, "wins": 0, "losses": 0 },
       { "name": "Ayat", "matches": 0, "wins": 0, "losses": 0 },
       { "name": "Meerab", "matches": 0, "wins": 0, "losses": 0 },
-      { "name": "Muntaha", "matches": 0, "wins": 0, "losses": 0 }
+      { "name": "Muntaha", "matches": 1, "wins": 1, "losses": 0 }
     ],
     "matches": [
     {
       "date": "2024-11-20",
       "player1": "Abeeha",
       "player2": "Muntaha",
-      "winner": ""
+      "winner": "Muntaha"
     },
     {
       "date": "2024-11-20",

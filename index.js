@@ -21,7 +21,6 @@ fetch('data.json')
       if (index === 0 && player?.points > 0) {
         row.innerHTML = `
           <td style="display: flex; align-items: center; justify-content: center;">
-            <img src="trophy.svg" alt="Trophy" width="20" height="20" style="margin-right: 8px;">
             ${player.name}
           </td>
           <td>${player.matches}</td>

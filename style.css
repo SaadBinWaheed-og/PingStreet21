@@ -1,134 +1,132 @@
 body {
-    font-family: "Finger Paint", sans-serif; /* Primary font: Poppins; fallback: Arial */
-    background-color: #f4f4f9;
-    background: url('background-2.webp') no-repeat center center fixed;
-    background-size: cover; /* Ensures the image covers the entire background */  
-    color: #4e4747;
-    margin: 0;
-    padding: 0;
-  }
-  .container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background: linear-gradient(135deg, #FFEE99, #f6e7ad); /* Gradient background */
-    border-radius: 15px; /* More rounded corners */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Deeper shadow for a pop-out effect */
-    border: 4px solid #FFCC00; /* Vibrant yellow border */
-    text-align: center; /* Center-align content */
-    animation: bounce 2s infinite ease-in-out; /* Optional playful animation */
-  }
-  
-  /* Optional Animation: A subtle bounce effect */
-  @keyframes bounce {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-5px);
-    }
-  }
-  
-  h1, h2, h3 {
-    font-family: "Finger Paint", sans-serif;
-    font-weight: 600; /* Bold for headings */
-    color: #4CAF50; /* Highlight color for headings */
-  }
+  font-family: "Finger Paint", sans-serif; /* Primary font */
+  background-color: #ffe6f2; /* Light pink */
+  background: url('background-2.webp') no-repeat center center fixed;
+  background-size: cover; /* Ensure the image covers the entire background */
+  color: #4e4747;
+  margin: 0;
+  padding: 0;
+}
 
-  h1 {
-    text-align: center;
-    color: #4CAF50;
-    font-size: 48px;
-  }
-  table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-    margin-top: 20px;
-    background-color: #ffffff;
-    border-radius: 15px; /* Rounded corners */
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    font-size: 32px;
-    
-  }
-  
-  table th, table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center; /* Ensures all cells are center-aligned */
-    vertical-align: middle; /* Centers content vertically */
-  }
-  
-  table th {
-    background-color: #4CAF50;
-    color: white;
-    text-shadow: 1px 1px #000; /* Fun text shadow for headers */
-  }
-  
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #ff99cc, #ffb6c1); /* Pink gradient */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Deeper shadow for a pop-out effect */
+  border: 4px solid #ff66b2; /* Vibrant pink border */
+  text-align: center; /* Center-align content */
+  animation: bounce 2s infinite ease-in-out; /* Optional playful animation */
+}
 
-  table tr:nth-child(even) {
-    background-color: #FFEE99; /* Light yellow for alternate rows */
+/* Optional Animation: A subtle bounce effect */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
   }
-  
-  table tr:nth-child(odd) {
-    background-color: #FFF7DD; /* Even lighter yellow for odd rows */
+  50% {
+    transform: translateY(-5px);
   }
-  
-  table tr:hover {
-    background-color: #FFD700; /* Golden highlight on hover */
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  table tr {
-    transition: background-color 0.3s ease-in-out; /* Smooth color change */
-  }
-  
-  table th:nth-child(5), table td:nth-child(5) {
-    font-weight: bold;
-  }
+}
 
-  table td:nth-child(5) {
-    color: #0caa31;
-  }
+h1, h2, h3 {
+  font-family: "Finger Paint", sans-serif;
+  font-weight: 600; /* Bold for headings */
+  color: #ff66b2; /* Pink highlight color for headings */
+}
 
-  /* Matches Section Styling */
-  #matchesList {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    gap: 20px; /* Space between match cards */
-  }
+h1 {
+  text-align: center;
+  color: #ff1493; /* Hot pink */
+  font-size: 48px;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 20px;
+  background-color: #ffe6f2; /* Light pink */
+  border-radius: 15px; /* Rounded corners */
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  font-size: 32px;
+}
+
+table th, table td {
+  border: 1px solid #ffc1e3; /* Light pink border */
+  padding: 10px;
+  text-align: center; /* Center-align content */
+  vertical-align: middle; /* Centers content vertically */
+}
+
+table th {
+  background-color: #ff66b2; /* Bright pink for header cells */
+  color: white;
+  text-shadow: 1px 1px #000; /* Text shadow for headers */
+}
+
+table tr:nth-child(even) {
+  background-color: #ffd9e8; /* Light pink for alternate rows */
+}
+
+table tr:nth-child(odd) {
+  background-color: #fff0f5; /* Softer pink for odd rows */
+}
+
+table tr:hover {
+  background-color: #ffb6c1; /* Light hot pink highlight on hover */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+table tr {
+  transition: background-color 0.3s ease-in-out; /* Smooth color change */
+}
+
+table th:nth-child(5), table td:nth-child(5) {
+  font-weight: bold;
+}
+
+table td:nth-child(5) {
+  color: #ff1493; /* Hot pink for emphasis */
+}
+
+/* Matches Section Styling */
+#matchesList {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  gap: 20px; /* Space between match cards */
+}
 
 #matchesList h2 {
   font-family: "Finger Paint", sans-serif;
   font-size: 1.8rem;
-  color: #4CAF50;
+  color: #ff66b2; /* Pink */
   text-align: center;
   margin-bottom: 20px;
 }
 
-
 /* Match Card Styling */
 .match-card {
-  background: #ffffff;
-  border: 2px solid #FFCC00;
+  background: #ffe6f2; /* Light pink */
+  border: 2px solid #ff66b2; /* Pink border */
   border-radius: 10px;
   padding: 15px;
-  width: 90%; /* Make cards responsive for small screens */
-  max-width: 400px; /* Set a maximum width for larger screens */
+  width: 90%; /* Responsive for small screens */
+  max-width: 400px; /* Set maximum width for larger screens */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-family: "Finger Paint", sans-serif;
 }
 
-
 .match-date {
   font-size: 1rem;
   font-weight: bold;
-  color: #4CAF50;
+  color: #ff1493; /* Hot pink */
   margin-bottom: 10px;
 }
 
@@ -139,7 +137,7 @@ body {
 
 .vs-text {
   font-weight: bold;
-  color: #FF6F61; /* Coral color for 'VS' */
+  color: #ff66b2; /* Bright pink for 'VS' */
   margin: 0 5px;
 }
 
@@ -150,46 +148,69 @@ body {
 
 .winner-name {
   font-weight: bold;
-  color: #4CAF50; /* Green for winner */
+  color: #ff1493; /* Hot pink */
 }
 
 .tbd {
   font-weight: bold;
-  color: #FF6F61; /* Coral for TBD */
+  color: #ff66b2; /* Bright pink */
 }
 
-  @media (max-width: 480px) {
-    body {
-      background: url('background-2.webp') center center / cover no-repeat;
-
-      background-size: cover;
-      min-height: 100vh; /* Ensures the background covers the full viewport height */
-      display: flex; /* Enable flexbox for body */
-      flex-direction: column; /* Ensures items stack vertically if needed */
-      justify-content: center; /* Vertically center the content */
-      align-items: center; /* Horizontally center the content */
-      margin: 0; /* Remove any default margin for body */
-    }
-  
-    .container {
-      margin: 5px;
-      padding: 10px;
-    }
-  
-    h1, h2, h3 {
-      font-family: "Finger Paint", sans-serif;
-      font-weight: 600; /* Bold for headings */
-      color: #4CAF50; /* Highlight color for headings */
-      font-size:18px ;
-    }
-
-    table th,
-    table td {
-      padding: 5px;
-      font-size: 14px;
-    }
-  
-    table {
-      font-size: 14px;
-    }
+@media (max-width: 480px) {
+  body {
+    background: url('background-2.webp') center center / cover no-repeat;
+    background-size: cover;
+    min-height: 100vh; /* Ensures the background covers the full viewport height */
+    display: flex; /* Enable flexbox for body */
+    flex-direction: column; /* Ensures items stack vertically if needed */
+    justify-content: center; /* Vertically center the content */
+    align-items: center; /* Horizontally center the content */
+    margin: 0; /* Remove any default margin for body */
   }
+
+  .container {
+    margin: 5px;
+    padding: 10px;
+  }
+
+  h1, h2, h3 {
+    font-family: "Finger Paint", sans-serif;
+    font-weight: 600; /* Bold for headings */
+    color: #ff1493; /* Hot pink for headings */
+    font-size: 18px;
+  }
+
+  table th,
+  table td {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+}
+
+/* Sparkly effect for the winner's name */
+.sparkly-border {
+  position: relative;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb);
+  background-size: 200% 200%;
+  animation: sparkly-animation 2s infinite;
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.6), 0 0 20px rgba(255, 182, 193, 0.8);
+}
+
+@keyframes sparkly-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

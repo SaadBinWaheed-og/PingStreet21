@@ -42,44 +42,47 @@ fetch('data.json')
   })
   .catch((error) => console.error('Error loading data:', error));
 
-
-// Fetch and display matches as VS cards
-function fetchAndDisplayMatches() {
-  fetch('data.json')
-    .then(response => response.json())
-    .then(data => {
-      const matchesContainer = document.getElementById('matchesList');
-      matchesContainer.innerHTML = ''; // Clear previous content
-
-      // Create a title for the matches section
-      const matchesTitle = document.createElement('h2');
-      matchesTitle.textContent = 'Matches List';
-      matchesContainer.appendChild(matchesTitle);
-
-      // Generate cards for each match
-      data.matches.forEach(match => {
-        const matchCard = document.createElement('div');
-        matchCard.classList.add('match-card');
-
-        // Card content
-        matchCard.innerHTML = `
-          <div class="match-date">${match.date}</div>
-          <div class="match-players">
-            <span class="player-name">${match.player1}</span>
-            <span class="vs-text">VS</span>
-            <span class="player-name">${match.player2}</span>
-          </div>
-          <div class="match-winner">
-            Winner: <span class="${match.winner ? 'winner-name' : 'tbd'}">
-              ${match.winner || 'TBD'}
-            </span>
-          </div>
-        `;
-        matchesContainer.appendChild(matchCard);
-      });
-    })
-    .catch(error => console.error('Error fetching matches:', error));
-}
-
-// Call this function after the league table is rendered
-fetchAndDisplayMatches();
+  function fetchAndDisplayMatches() {
+    fetch('data.json')
+      .then((response) => response.json())
+      .then((data) => {
+        const matchesContainer = document.getElementById('matchesList');
+        matchesContainer.innerHTML = ''; // Clear previous content
+  
+        // Create a title for the matches section
+        const matchesTitle = document.createElement('h2');
+        matchesTitle.textContent = 'Matches List';
+        matchesContainer.appendChild(matchesTitle);
+  
+        // Generate cards for each match
+        data.matches.forEach((match) => {
+          const matchCard = document.createElement('div');
+          matchCard.classList.add('match-card');
+  
+          // Determine if Player 1 or Player 2 is the winner
+          const player1Class = match.winner === match.player1 ? 'sparkly-border' : '';
+          const player2Class = match.winner === match.player2 ? 'sparkly-border' : '';
+  
+          // Card content
+          matchCard.innerHTML = `
+            <div class="match-date">${match.date}</div>
+            <div class="match-players">
+              <span class="player-name ${player1Class}">${match.player1}</span>
+              <span class="vs-text">VS</span>
+              <span class="player-name ${player2Class}">${match.player2}</span>
+            </div>
+            <div class="match-winner">
+              Winner: <span class="${match.winner ? 'winner-name' : 'tbd'}">
+                ${match.winner || 'TBD'}
+              </span>
+            </div>
+          `;
+          matchesContainer.appendChild(matchCard);
+        });
+      })
+      .catch((error) => console.error('Error fetching matches:', error));
+  }
+  
+  // Call this function after the league table is rendered
+  fetchAndDisplayMatches();
+  

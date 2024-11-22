@@ -189,6 +189,10 @@ table td:nth-child(5) {
   table {
     font-size: 14px;
   }
+
+  .match-players{
+    font-size: 14px;
+  }
 }
 
 /* Sparkly effect for the winner's name */

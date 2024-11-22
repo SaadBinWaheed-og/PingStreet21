@@ -82,7 +82,29 @@ fetch('data.json')
       })
       .catch((error) => console.error('Error fetching matches:', error));
   }
+
+  document.addEventListener('mousemove', (event) => {
+    // Create the star element
+    const star = document.createElement('div');
+    star.classList.add('star-sparkle');
   
-  // Call this function after the league table is rendered
+    // Add the star SVG as background
+    star.style.left = `${event.pageX}px`;
+    star.style.top = `${event.pageY}px`;
+    star.style.background = `
+      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="gold"><path d="M12 .587l3.668 7.511L24 9.765l-6 5.827L19.335 24 12 19.911 4.665 24 6 15.592 0 9.765l8.332-1.667z"/></svg>')
+    `;
+    star.style.backgroundSize = 'contain';
+    star.style.backgroundRepeat = 'no-repeat';
+  
+    // Append the star to the body
+    document.body.appendChild(star);
+  
+    // Remove the star after the animation ends
+    setTimeout(() => {
+      star.remove();
+    }, 1200); // Matches the animation duration
+  });
+  
   fetchAndDisplayMatches();
   

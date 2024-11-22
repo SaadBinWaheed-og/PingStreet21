@@ -214,3 +214,24 @@ table td:nth-child(5) {
     background-position: 0% 50%;
   }
 }
+
+/* Star sparkle effect */
+.star-sparkle {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  pointer-events: none; /* Prevent interaction */
+  animation: sparkle-fade 1.2s ease-out forwards;
+}
+
+/* Fade-out animation */
+@keyframes sparkle-fade {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.3) rotate(45deg);
+  }
+}

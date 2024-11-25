@@ -1,10 +1,10 @@
 {
     "players": [
       { "name": "Abeeha", "matches": 3, "wins": 0, "losses": 3 },
-      { "name": "Amna", "matches": 2, "wins": 1, "losses": 1 },
-      { "name": "Anabiya", "matches": 1, "wins": 1, "losses": 0 },
+      { "name": "Amna", "matches": 3, "wins": 1, "losses": 2 },
+      { "name": "Anabiya", "matches": 3, "wins": 3, "losses": 0 },
       { "name": "Ayat", "matches": 3, "wins": 1, "losses": 2 },
-      { "name": "Meerab", "matches": 2, "wins": 2, "losses": 0 },
+      { "name": "Meerab", "matches": 3, "wins": 2, "losses": 1 },
       { "name": "Muntaha", "matches": 1, "wins": 1, "losses": 0 }
     ],
     "matches": [
@@ -36,7 +36,7 @@
       "date": "2024-11-21",
       "player1": "Meerab",
       "player2": "Anabiya",
-      "winner": ""
+      "winner": "Anabiya"
     },
     {
       "date": "2024-11-21",
@@ -72,7 +72,7 @@
       "date": "2024-11-23",
       "player1": "Amna",
       "player2": "Anabiya",
-      "winner": ""
+      "winner": "Anabiya"
     },
     {
       "date": "2024-11-23",

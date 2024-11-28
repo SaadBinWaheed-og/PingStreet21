@@ -21,7 +21,8 @@ fetch('data.json')
       if (index === 0 && player?.points > 0) {
         row.innerHTML = `
           <td style="display: flex; align-items: center; justify-content: center;">
-            ${player.name}
+                       <img src="trophy.svg" alt="Trophy" width="40" height="40" style="margin-right: 8px;">
+ ${player.name}
           </td>
           <td>${player.matches}</td>
           <td>${player.wins}</td>

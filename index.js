@@ -108,4 +108,6 @@ fetch('data.json')
   });
   
   fetchAndDisplayMatches();
+
+console.log("This is merely and attemp to see how the PR is reivewed by CodeRabit")
   
